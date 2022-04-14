@@ -3,6 +3,9 @@ kind: TrainingPortal
 metadata:
   name: lab-debug
 spec:
+  analytics:
+    webhook:
+      url: https://rest-receiver.herokuapp.com/?client=name&token=password
   portal:
     registration:
       type: anonymous
